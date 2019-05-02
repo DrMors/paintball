@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css//slick.css">
 </head>
 
 <body>
@@ -39,9 +40,7 @@
         <a href="tel:+380 71 50 50 500" class="phone_number">+380 71 50 50 500</a>
     </header>
     <section class="main_slider">
-        <!-- <img class="slider_1" src="slider1.jpg" alt=""> -->
-        <button class="main_slider__arrow left"><img src="Paintball/arrow-left.png" alt="arrow left"></button>
-        <div class="main_slider__content first">
+        <!-- <div class="main_slider__content first">
             <div class="main_slider__info">
                 <span class="slider_info__text up">База</span>
                 <span class="slider_info__text midle">Экстримального</span>
@@ -49,8 +48,29 @@
                 <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
                 <button class="slider_info__btn" href="#">Забронируйте дату!</button>
             </div>
+        </div> -->
+
+        <div class="main_slider__slide first">
+            <div class="main_slider__slide_content">
+                <span class="slider_info__text up">2</span>
+                <span class="slider_info__text midle">Экстримального</span>
+                <span class="slider_info__text up2">Отдыха в макеевке</span>
+                <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
+                <button class="slider_info__btn" href="#">Забронируйте дату!</button>
+            </div>
         </div>
-        <button class="main_slider__arrow right"><img src="Paintball/arrow-left.png" alt="arrow right"></button>
+
+        
+        <div class="main_slider__slide second">
+                <div class="main_slider__slide_content">
+                    <span class="slider_info__text up">2</span>
+                    <span class="slider_info__text midle">Экстримального</span>
+                    <span class="slider_info__text up2">Отдыха в макеевке</span>
+                    <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
+                    <button class="slider_info__btn" href="#">Забронируйте дату!</button>
+                </div>
+            </div>
+
     </section>
     <section id="privilege" class="privilege">
         <h2 class="privilege__h2">Почему мы...</h2>
@@ -120,7 +140,8 @@
             <img src="Paintball/pai.jpg" alt="photo" class="photos_slider__img">
             <img src="Paintball/9E9A0196.jpg" alt="photo" class="photos_slider__img">
         </div>
-        <button class="photos_slider__arrow right"><img src="Paintball/icons8-forward-48.png" alt="arrow right"></button>
+        <button class="photos_slider__arrow right"><img src="Paintball/icons8-forward-48.png"
+                alt="arrow right"></button>
         <!-- /.photos_slider -->
     </section>
     <!-- /.photos -->
@@ -185,6 +206,8 @@
         </div>
     </footer>
     <!-- <script src="scrollTo.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

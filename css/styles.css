@@ -130,20 +130,40 @@ header {
 
 /********* слайдер ************/
 .main_slider {
-    background: url(Paintball/slider1.jpg) 50% 50% no-repeat;
-    background-size: cover;
     box-shadow: inset 0px -60px 50px rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.main_slider__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+.main_slider__slide.first {
+    background: url(../Paintball/slider1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.main_slider__slide.second {
+    background: url(../Paintball/slider2.jpeg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.main_slider__slide_content {
     max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 210px 0 260px 0;
+    max-width: 1140px;
+
+    transition: 1s;
+    transition-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.slick-active .main_slider__slide_content {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .main_slider__arrow {
@@ -151,10 +171,18 @@ header {
     background: #00000000;
     border: 0;
     outline: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
 }
 
 .main_slider__arrow.right {
     transform: rotateY(180deg);
+    left: inherit;
+    right: 0;
 }
 
 .main_slider__arrow.right:active {
@@ -242,7 +270,7 @@ header {
     top: 0;
     width: 60px;
     height: 60px;
-    background: url(Paintball/hand-with-smartphone.png) no-repeat #CA4040;
+    background: url(../Paintball/hand-with-smartphone.png) no-repeat #CA4040;
     background-size: contain;
     border: solid 5px #CA4040;
 }
@@ -285,7 +313,7 @@ header {
     position: relative;
     height: 424px;
     width: 285px;
-    background: url(Paintball/blood-splatter-by-vexels.png) 50% 50% no-repeat;
+    background: url(../Paintball/blood-splatter-by-vexels.png) 50% 50% no-repeat;
     background-size: cover;
     margin: auto;
 }
@@ -312,19 +340,19 @@ header {
 }
 
 .privilege_img__clock::after {
-    background: url(Paintball/24-hours.png) no-repeat;
+    background: url(../Paintball/24-hours.png) no-repeat;
 }
 
 .privilege_img__gun::after {
-    background: url(Paintball/icons8-paintball-gun-50.png) no-repeat;
+    background: url(../Paintball/icons8-paintball-gun-50.png) no-repeat;
 }
 
 .privilege_img__party::after {
-    background: url(Paintball/icons8-crowd-80.png) no-repeat;
+    background: url(../Paintball/icons8-crowd-80.png) no-repeat;
 }
 
 .privilege_img__weather::after {
-    background: url(Paintball/Без\ имени-1.png) no-repeat;
+    background: url(../Paintball/Без\ имени-1.png) no-repeat;
 }
 
 .privilege_img__clock::after,
@@ -431,7 +459,7 @@ header {
 .photos {
     position: relative;
     width: 100%;
-    background: url(Paintball/GfCF6F8zDn.jpg) no-repeat;
+    background: url(../Paintball/GfCF6F8zDn.jpg) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -482,7 +510,7 @@ header {
 /* **форма бронирования***************** */
 .main_form {
     position: relative;
-    background: url(Paintball/7-51.jpg) no-repeat 50% 30%;
+    background: url(../Paintball/7-51.jpg) no-repeat 50% 30%;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -543,7 +571,7 @@ header {
 
 /* ***********футер ************** */
 .footer {
-    background: url(Paintball/GfCF6F8zDn.jpg) no-repeat;
+    background: url(../Paintball/GfCF6F8zDn.jpg) no-repeat;
     background-size: cover;
 }
 
