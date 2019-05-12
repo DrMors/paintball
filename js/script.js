@@ -24,7 +24,7 @@ $('.main_slider').slick({
 
 $('.head_nav__link').on('click', function (e) {
     e.preventDefault()
-  
+
     $('html').animate({
         scrollTop: $($(this).attr('href')).offset().top,
     }, 500)
@@ -33,27 +33,31 @@ $('.head_nav__link').on('click', function (e) {
 
 $('.photos_slider').slick({
     dots: true,
+    prevArrow: '<button class="photos_slider__arrow left"><img src="Paintball/icons8-forward-48.png" alt="arrow left"></button>',
+    nextArrow: '<button class="photos_slider__arrow right"><img src="Paintball/icons8-forward-48.png" alt="arrow right"></button>',
+    infinite: true,
+    autoplay: true,
     centerMode: true,
-    centerPadding: '60px',
     slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
     ]
-  });
+});

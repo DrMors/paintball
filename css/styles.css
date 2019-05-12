@@ -478,12 +478,21 @@ header {
 }
 
 .photos_slider__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
     background: 0;
     border: 0;
     outline: 0;
 }
 
-
+.photos_slider__arrow.right {
+    right: 0;
+    left: inherit;
+}
 
 .photos_slider__arrow.left {
     transform: rotateY(180deg);
@@ -493,21 +502,37 @@ header {
     transform: rotateY(180deg) translateX(3px);
 }
 
-.photos_slider {
+ .photos_slider {
     display: flex;
     max-width: 1140px;
+    width: 100%;
     justify-content: center;
-    margin: 205px 40px;
+    margin: 120px 40px;
     align-items: center;
-}
+} 
 
-.photos_slider__img {
+ .photos_slider__img {
     width: 33%;
     height: 100%;
-}
+} 
 
 .photos_slider__img:nth-child(2) {
     transform: scale(1.5);
+}
+
+/*слайдер*/
+.photos_slider .slick-list {
+    height: 326px;
+    padding: 0 !important;
+}
+.photos_slider .slick-track {
+    top: 38px;
+}
+.photos_slider .slick-active.slick-center {
+    transform: scale(1.5);
+}
+.photos_slider .slick-slide {
+    transition: 0.5s;
 }
 
 /* **форма бронирования***************** */
@@ -818,3 +843,4 @@ header {
 }
 
 /********* анимации ****/
+
