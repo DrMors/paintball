@@ -2,12 +2,12 @@ var mobileMenuActiveClass = 'nav_mobile-active'
 
 $('.burger_btn').on('click', function () {
     $('.nav_mobile').addClass(mobileMenuActiveClass)
-})
+});
 
 
 $('.nav_mobile__bg').on('click', function () {
     $('.nav_mobile').removeClass(mobileMenuActiveClass)
-})
+});
 
 
 $('.main_slider').slick({
@@ -19,7 +19,7 @@ $('.main_slider').slick({
     prevArrow: '<button class="main_slider__arrow left"><img src="Paintball/arrow-left.png" alt="arrow left"></button>',
     nextArrow: '<button class="main_slider__arrow right"><img src="Paintball/arrow-left.png" alt="arrow right"></button>',
     pauseOnHover: false
-})
+});
 
 
 $('.head_nav__link').on('click', function (e) {
@@ -28,4 +28,32 @@ $('.head_nav__link').on('click', function (e) {
     $('html').animate({
         scrollTop: $($(this).attr('href')).offset().top,
     }, 500)
-})
+});
+
+
+$('.photos_slider').slick({
+    dots: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });

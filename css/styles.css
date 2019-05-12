@@ -40,6 +40,7 @@ header {
     box-sizing: content-box;
     border: solid 30.75px #CA4040;
     margin-right: 20%;
+    z-index: 1;
 }
 
 .header {
@@ -130,7 +131,6 @@ header {
 
 /********* слайдер ************/
 .main_slider {
-    box-shadow: inset 0px -60px 50px rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -139,11 +139,13 @@ header {
 .main_slider__slide.first {
     background: url(../Paintball/slider1.jpg) 50% 50% no-repeat;
     background-size: cover;
+    box-shadow: inset 0px -60px 50px rgba(0, 0, 0, 1);
 }
 
 .main_slider__slide.second {
     background: url(../Paintball/slider2.jpeg) 50% 50% no-repeat;
     background-size: cover;
+    box-shadow: inset 0px -60px 50px rgba(0, 0, 0, 1);
 }
 
 .main_slider__slide_content {
@@ -224,7 +226,7 @@ header {
 .slider_info__btn,
 .prices__btn,
 .form_block__btn {
-    margin-top: 20%;
+    margin-top: 10%;
     padding: 13px 50px;
     background: #CA4040;
     width: fit-content;
@@ -294,6 +296,7 @@ header {
 .privilege__h2 {
     font-size: 48px;
     margin-bottom: 50px;
+    padding-top: 15px;
 }
 
 /* images */
