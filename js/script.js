@@ -30,6 +30,13 @@ $('.head_nav__link').on('click', function (e) {
     }, 500)
 });
 
+$('.btn_form').on('click', function (e) {
+    e.preventDefault()
+
+    $('html').animate({
+        scrollTop: $($(this).attr('href')).offset().top,
+    }, 500)
+});
 
 $('.photos_slider').slick({
     dots: true,
