@@ -481,7 +481,7 @@ header {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: -50px;
     margin: auto;
     z-index: 1;
     background: 0;
@@ -490,7 +490,7 @@ header {
 }
 
 .photos_slider__arrow.right {
-    right: 0;
+    right: -50px;
     left: inherit;
 }
 
@@ -555,9 +555,10 @@ header {
 
 .form__name {
     position: absolute;
-    top: 20px;
+    top: 40px;
     font-size: 35px;
     color: #D9DADD;
+    z-index: 1;
 }
 
 .form_block {
@@ -701,13 +702,12 @@ header {
         height: 67px;
     }
 
+    .photos_slider .slick-active.slick-center {
+        transform: scale(1);
+    }
 
     .price_list {
         flex-direction: column;
-    }
-
-    .photos_slider__img:nth-child(2) {
-        transform: scale(3);
     }
 }
 
@@ -774,10 +774,6 @@ header {
         font-size: 38px;
     }
 
-    .photos_slider__img:nth-child(2) {
-        transform: scale(3.5);
-    }
-
     .price_list {
         flex-direction: column;
     }
@@ -836,10 +832,6 @@ header {
         height: 67px;
     }
 
-
-    .photos_slider__img:nth-child(2) {
-        transform: scale(5);
-    }
 }
 
 /********* анимации ****/

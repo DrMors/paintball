@@ -47,7 +47,7 @@
                 <span class="slider_info__text midle">Экстримального</span>
                 <span class="slider_info__text up2">Отдыха в макеевке</span>
                 <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
-                <button class="slider_info__btn" href="#">Забронируйте дату!</button>
+                <button class="slider_info__btn"><a href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
 
@@ -58,7 +58,7 @@
                 <span class="slider_info__text midle">Экстримального</span>
                 <span class="slider_info__text up2">Отдыха в макеевке</span>
                 <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
-                <button class="slider_info__btn" href="#">Забронируйте дату!</button>
+                <button class="slider_info__btn"><a href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
 
@@ -98,7 +98,7 @@
                 <p class="prices__text">Стоимость........................1 рублей<br>
                     Количество шаров...................200<br>
                     Время.....................................1 час</p>
-                <button class="prices__btn" href="#">Забронируйте дату!</button>
+                <button class="prices__btn"><a href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
         <div class="price_block">
@@ -108,7 +108,7 @@
                 <p class="prices__text">Стоимость........................1 рублей<br>
                     Количество шаров...................200<br>
                     Время.....................................1 час</p>
-                <button class="prices__btn" href="#">Забронируйте дату!</button>
+                <button class="prices__btn"><a href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
         <div class="price_block">
@@ -118,7 +118,7 @@
                 <p class="prices__text">Стоимость........................1 рублей<br>
                     Количество шаров...................200<br>
                     Время.....................................1 час</p>
-                <button class="prices__btn" href="#">Забронируйте дату!</button>
+                <button class="prices__btn"><a href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
     </section>
@@ -140,9 +140,8 @@
     </section>
     <!-- /.photos -->
     <section id="form" class="main_form">
-        <!-- <img src="Paintball/7-51.jpg" alt="" class="fon"> -->
-        <div class="form">
-            <h2 class="form__name">Бронирование</h2>
+        <h2 class="form__name">Бронирование</h2>
+        <form class="form" method="POST" target="_blank" action="./php/form.php">
             <div class="form_block info_player">
                 <label>Имя<br>
                     <input name="first_name" type="text" required placeholder="Петр">
@@ -174,9 +173,10 @@
                 <label class="radio">
                     <input name="kind_of_game" type="radio"> Детский PAINTBALL
                 </label>
-                <button href="#" class="form_block__btn">Забронировать</button>
+                <button type="submit" name="sab" class="form_block__btn">Забронировать</button>
             </div>
-        </div>
+        </form>
+
     </section>
     <!-- /.form -->
     <section id="maps" class="maps">
