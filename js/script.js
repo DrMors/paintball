@@ -34,7 +34,7 @@ $('.btn_form').on('click', function (e) {
     e.preventDefault()
 
     $('html').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
+        scrollTop: $($(this).attr('data-href')).offset().top,
     }, 500)
 });
 
@@ -47,6 +47,7 @@ $('.photos_slider').slick({
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    pauseOnHover: false,
     responsive: [
         {
             breakpoint: 768,
@@ -68,3 +69,5 @@ $('.photos_slider').slick({
         }
     ]
 });
+
+new WOW().init();

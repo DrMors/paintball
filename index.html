@@ -7,29 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
         <div id="nav" class="header">
             <div class="logo">
-                <img class="logo__img" src="Paintball/logo.png" alt="logo">
+                <img class="logo__img wow flipInX" src="Paintball/logo.png" alt="logo">
             </div>
             <div class="nav_head">
                 <button class="burger_btn"><img src="Paintball/icons8-menu-filled-50.png" alt="раскрыть меню"></button>
-                <a href="#privilege" class="head_nav__link">Почему мы</a>
-                <a href="#Price" class="head_nav__link">Прайс-лист</a>
-                <a href="#Photo" class="head_nav__link">Галерея</a>
-                <a href="#form" class="head_nav__link">Бронирование</a>
-                <a href="#maps" class="head_nav__link">Контакты</a>
+                <a href="#privilege" class="head_nav__link wow flipInX" data-wow-delay="0.1s">Почему мы</a>
+                <a href="#Price" class="head_nav__link wow flipInX" data-wow-delay="0.2s">Прайс-лист</a>
+                <a href="#Photo" class="head_nav__link wow flipInX" data-wow-delay="0.3s">Галерея</a>
+                <a href="#form" class="head_nav__link wow flipInX" data-wow-delay="0.4s">Бронирование</a>
+                <a href="#maps" class="head_nav__link wow flipInX" data-wow-delay="0.5s">Контакты</a>
             </div>
             <div class="nav_mobile">
                 <div class="nav_mobile__bg"></div>
                 <div class="nav_mobile__menu">
-                    <img class="head_nav__logo" src="Paintball/logo.png" alt="logo">
+                    <img class="head_nav__logo" src="Paintball/logo.png" alt="Пейнтбол в Макеевке логотип">
                     <a href="#privilege" class="head_nav__link">Почему мы</a>
                     <a href="#Price" class="head_nav__link">Прайс-лист</a>
                     <a href="#Photo" class="head_nav__link">Галерея</a>
@@ -47,7 +48,7 @@
                 <span class="slider_info__text midle">Экстримального</span>
                 <span class="slider_info__text up2">Отдыха в макеевке</span>
                 <span class="slider_info__text down">наши мероприятия говорят сами за себя,<br> поверьте нам!</span>
-                <button class="slider_info__btn"><a class="btn_form" href="#form">Забронируйте дату!</a></button>
+                <button data-href="#form" class="slider_info__btn btn_form">Забронируйте дату!</button>
             </div>
         </div>
 
@@ -63,25 +64,25 @@
         </div>
 
     </section>
-    <section id="privilege" class="privilege">
+    <section class="wow fadeInUp privilege" id="privilege">
         <h2 class="privilege__h2">Почему мы...</h2>
         <p class="privilege__p">Мы - база для семейного отдыха и предлагаем групповые заказы на дни рождения и <br>
             мальчишники, корпоративные мероприятия, спортивные клубы или для тех, кто хочет провести <br> свободное
             время</p>
-        <div class="privilege_images">
-            <div class="privilege_img_block">
+        <div class="privilege_images wow fadeInUp" data-wow-delay="0.5s">
+            <div class="privilege_img_block" data-wow-delay="0.7s">
                 <div class="privilege_img__clock"></div>
                 <p class="privilege_img__p">ИНТЕРЕСНО И <br> НЕОБЫЧНО <br> ПРОВЕДЕТЕ ВРЕМЯ</p>
             </div>
-            <div class="privilege_img_block">
+            <div class="wow zoomIn privilege_img_block" data-wow-delay="0.8s">
                 <div class="privilege_img__gun"></div>
                 <p class="privilege_img__p">ПОЛУЧИТЕ<br> НЕСТАНДАРТНЫЙ<br> ОТДЫХ</p>
             </div>
-            <div class="privilege_img_block">
+            <div class="wow zoomIn privilege_img_block" data-wow-delay="0.9s">
                 <div class="privilege_img__party"></div>
                 <p class="privilege_img__p">РАЗВЛЕЧЕНИЕ ДЛЯ<br> БОЛЬШОЙ<br> КОМПАНИИ</p>
             </div>
-            <div class="privilege_img_block">
+            <div class="wow zoomIn privilege_img_block" data-wow-delay="1s">
                 <div class="privilege_img__weather"></div>
                 <p class="privilege_img__p">В ЛЮБОЕ ВРЕМЯ<br> ГОДА</p>
             </div>
@@ -91,7 +92,7 @@
     </section>
     <!-- /.privilege -->
     <section id="Price" class="price_list">
-        <div class="price_block">
+        <div class="price_block wow fadeInLeft" data-wow-delay="0.5s">
             <img class="price_block__img" src="Paintball/018_2017_06_22_17_22_25_postnikov.jpg" alt="sport Paintball">
             <div class="price_name"><span class="price_name__span">Спортивный <span>PAINTBALL</span></span></div>
             <div class="prices">
@@ -101,7 +102,7 @@
                 <button class="prices__btn"><a class="btn_form" href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
-        <div class="price_block">
+        <div class="price_block wow fadeInUp" data-wow-delay="0.5s">
             <img class="price_block__img" src="Paintball/paintball_vakantieveilingen.jpg" alt="sport Paintball">
             <div class="price_name"><span class="price_name__span">Тактический <span>PAINTBALL</span></span></div>
             <div class="prices">
@@ -111,7 +112,7 @@
                 <button class="prices__btn"><a class="btn_form" href="#form">Забронируйте дату!</a></button>
             </div>
         </div>
-        <div class="price_block">
+        <div class="price_block wow fadeInRight" data-wow-delay="0.5s">
             <img class="price_block__img" src="Paintball/20170409_112625.jpg" alt="sport Paintball">
             <div class="price_name"><span class="price_name__span">Детский <span>PAINTBALL</span></span></div>
             <div class="prices">
@@ -144,14 +145,11 @@
         <form class="form" method="POST" target="_blank" action="./php/form.php">
             <div class="form_block info_player">
                 <label>Имя<br>
-                    <input name="first_name" type="text" required placeholder="Петр">
-                </label>
-                <label>Фамилия<br>
-                    <input name="last_name" type="text" required placeholder="Иванов">
+                    <input name="name" autocomplete="name" type="text" required placeholder="Петр">
                 </label>
                 <label>Номер телефона<br>
-                    <input name="tel" type="tel" required pattern="+380-[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{2}"
-                        placeholder="+380-71-00-000-00">
+                    <input name="tel" type="tel" autocomplete="tel" required pattern="(\+38)?[\s\-\(\)0-9]{10,}"
+                        placeholder="+38 (071) 000-00-00">
                 </label>
                 <label>Количество игроков<br>
                     <input name="players_number" type="number" min="1" max="10" value="1">
@@ -159,7 +157,7 @@
             </div>
             <div class="form_block game_details">
                 <label>Дата бронирования<br>
-                    <input name="data" type="datetime-local">
+                    <input name="data" type="date">
                 </label>
                 <label>Время игры<br>
                     <input name="time_play" type="time" min="9:00" max="18:00" required>
@@ -181,27 +179,29 @@
     <!-- /.form -->
     <section id="maps" class="maps">
         <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac4c9dc83c8de2100c686e1b5e9ee12956f43a9f46fbed759032700c83bff90d3&amp;width=100%&amp;height=320&amp;lang=uk_UA&amp;scroll=true">
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac4c9dc83c8de2100c686e1b5e9ee12956f43a9f46fbed759032700c83bff90d3&amp;width=100%&amp;height=320&amp;lang=ru_RU&amp;scroll=false">
         </script>
     </section>
     <footer class="footer">
         <div class="footer_content">
-            <img class="footer__logo" src="Paintball/logo.png" alt="logo">
+            <img class="footer__logo wow flipInX" src="Paintball/logo.png" alt="logo">
             <p class="footer_contact"><span>Адрес:</span> Украина, Донецкая облг.г.Макеевка
                 ул.Ленина,67<br><span>Телефон:</span> +380715050500
             </p>
 
-            <a href="#" class="footer__icon-vk"><img src="Paintball/icons8-vk.png" alt="vk"
+            <a href="#" class="footer__icon-vk wow flipInX" data-wow-delay="0.1s"><img src="Paintball/icons8-vk.png" alt="VK"
                     class="footer__icon-img"></a>
-            <a href="#" class="footer__icon-vk"><img src="Paintball/instagram-black-png-10.png" alt="vk"
+            <a href="#" class="footer__icon-vk wow flipInX" data-wow-delay="0.2s"><img src="Paintball/instagram-black-png-10.png" alt="Instagram"
                     class="footer__icon-img"></a>
-            <a href="#" class="footer__icon-vk"><img src="Paintball/20150213095025!Одноклассники.png" alt="vk"
+            <a href="#" class="footer__icon-vk wow flipInX" data-wow-delay="0.3s"><img src="Paintball/20150213095025!Одноклассники.png" alt="Одноклассники"
                     class="footer__icon-img"></a>
         </div>
     </footer>
+    <button class="toTop" id="toTop"><a href="#nav"><img src="Paintball/arrow_top.png" alt="arrow_top"></a></button>
     <!-- <script src="scrollTo.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

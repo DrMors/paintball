@@ -21,6 +21,9 @@
 }
 
 /********* разметка */
+body {
+    background: #000;
+}
 /* шапка */
 
 header {
@@ -257,7 +260,7 @@ header {
     position: fixed;
     font-family: Righteous;
     right: 0;
-    bottom: 65px;
+    bottom: 9px;
     font-size: 20px;
     color: #fff;
     padding: 20px 35px;
@@ -833,6 +836,19 @@ header {
     }
 
 }
+/* стрелочка вверх */
+.toTop {
+    position: fixed;
+    left: 10px;
+    bottom: 65px;
+    border: 0;
+    outline: 0;
+    background: #80808054;
+}
 
-/********* анимации ****/
+.toTop img {
+    width: 50px;
+    height: 50px;
+    filter: brightness(1);
+}
 
