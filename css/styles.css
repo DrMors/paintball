@@ -182,6 +182,7 @@ header {
     left: 0;
     margin: auto;
     z-index: 1;
+    cursor: pointer;
 }
 
 .main_slider__arrow.right {
@@ -239,12 +240,19 @@ header {
     font-weight: bold;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .slider_info__btn:active,
 .prices__btn:active,
 .form_block__btn:active {
     transform: translateY(3px);
+}
+
+.slider_info__btn:hover,
+.prices__btn:hover,
+.form_block__btn:hover {
+background: rgb(150, 47, 47);
 }
 
 .photos_slider__arrow:active {
@@ -490,6 +498,7 @@ header {
     background: 0;
     border: 0;
     outline: 0;
+    cursor: pointer;
 }
 
 .photos_slider__arrow.right {
@@ -597,6 +606,10 @@ header {
     position: relative;
     left: -140px;
     bottom: 3px;
+}
+
+.form_block__btn:focus {
+    background: rgb(150, 47, 47);
 }
 
 /* *****  карта яндекс****************/
