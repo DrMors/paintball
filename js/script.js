@@ -12,6 +12,7 @@ $('.nav_mobile__bg').on('click', function () {
 
 
 $('.main_slider').slick({
+    speed: 700,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -19,36 +20,36 @@ $('.main_slider').slick({
     autoplay: true,
     prevArrow: '<button class="main_slider__arrow left"><img src="Paintball/arrow-left.png" alt="arrow left"></button>',
     nextArrow: '<button class="main_slider__arrow right"><img src="Paintball/arrow-left.png" alt="arrow right"></button>',
-    pauseOnHover: false
+    pauseOnHover: false,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
 });
 
+function makeScroller (el, attr) {
+    $(el).on('click', function (e) {
+        e.preventDefault()
+    
+        $('html').animate({
+            scrollTop: $($(this).attr(attr)).offset().top
+        }, 500)
+    })
+}
 
-$('.head_nav__link').on('click', function (e) {
-    e.preventDefault()
+makeScroller('.head_nav__link', 'href')
+makeScroller('.btn_form', 'data-href')
+makeScroller('.toTop', 'data-href')
 
-    $('html').animate({
-        scrollTop: $($(this).attr('href')).offset().top,
-    }, 500)
-});
-
-$('.btn_form').on('click', function (e) {
-    e.preventDefault()
-
-    $('html').animate({
-        scrollTop: $($(this).attr('data-href')).offset().top,
-    }, 500)
-});
-
-$('.toTop').on('click', function (e) {
-    e.preventDefault()
-
-    $('html').animate({
-        scrollTop: $($(this).attr('data-href')).offset().top,
-    }, 500)
-});
 
 $('.photos_slider').slick({
     dots: true,
+    centerPadding: '60px',
+    speed: 300,
     prevArrow: '<button class="photos_slider__arrow left"><img src="Paintball/icons8-forward-48.png" alt="arrow left"></button>',
     nextArrow: '<button class="photos_slider__arrow right"><img src="Paintball/icons8-forward-48.png" alt="arrow right"></button>',
     infinite: true,
@@ -60,15 +61,6 @@ $('.photos_slider').slick({
     responsive: [
         {
             breakpoint: 768,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -101,10 +93,5 @@ $(function () {
 
     });
 
-    $(toTop).click(function () {
-
-        $('body,html').animate({ scrollTop: 0 }, 500);
-
-    });
 
 });

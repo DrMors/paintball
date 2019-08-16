@@ -24,6 +24,7 @@
 body {
     background: #000;
 }
+
 /* шапка */
 
 header {
@@ -153,7 +154,7 @@ header {
 
 .main_slider__slide_content {
     max-width: 1140px;
-    margin: auto;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -252,7 +253,7 @@ header {
 .slider_info__btn:hover,
 .prices__btn:hover,
 .form_block__btn:hover {
-background: rgb(150, 47, 47);
+    background: rgb(150, 47, 47);
 }
 
 .photos_slider__arrow:active {
@@ -514,19 +515,19 @@ background: rgb(150, 47, 47);
     transform: rotateY(180deg) translateX(3px);
 }
 
- .photos_slider {
+.photos_slider {
     display: flex;
     max-width: 1140px;
     width: 100%;
     justify-content: center;
     margin: 120px 40px;
     align-items: center;
-} 
+}
 
- .photos_slider__img {
+.photos_slider__img {
     width: 33%;
     height: 100%;
-} 
+}
 
 .photos_slider__img:nth-child(2) {
     transform: scale(1.5);
@@ -537,12 +538,15 @@ background: rgb(150, 47, 47);
     height: 326px;
     padding: 0 !important;
 }
+
 .photos_slider .slick-track {
     top: 38px;
 }
+
 .photos_slider .slick-active.slick-center {
     transform: scale(1.5);
 }
+
 .photos_slider .slick-slide {
     transition: 0.5s;
 }
@@ -618,6 +622,8 @@ background: rgb(150, 47, 47);
 .footer {
     background: url(../Paintball/GfCF6F8zDn.jpg) no-repeat;
     background-size: cover;
+    padding: 20px 0 80px;
+
 }
 
 .footer_content {
@@ -809,6 +815,19 @@ background: rgb(150, 47, 47);
         margin: auto;
         margin-top: 25px;
     }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer_contact {
+        padding: 5px 25px;
+    }
+
+    .footer_content {
+        flex-wrap: wrap;
+        padding: 5px 25px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -849,6 +868,7 @@ background: rgb(150, 47, 47);
     }
 
 }
+
 /* стрелочка вверх */
 .toTop {
     position: fixed;
@@ -876,4 +896,3 @@ background: rgb(150, 47, 47);
     height: 50px;
     filter: brightness(1);
 }
-
