@@ -1,5 +1,6 @@
 var mobileMenuActiveClass = 'nav_mobile-active'
 
+
 $('.burger_btn').on('click', function () {
     $('.nav_mobile').addClass(mobileMenuActiveClass)
 });
@@ -31,6 +32,14 @@ $('.head_nav__link').on('click', function (e) {
 });
 
 $('.btn_form').on('click', function (e) {
+    e.preventDefault()
+
+    $('html').animate({
+        scrollTop: $($(this).attr('data-href')).offset().top,
+    }, 500)
+});
+
+$('.toTop').on('click', function (e) {
     e.preventDefault()
 
     $('html').animate({
@@ -71,3 +80,31 @@ $('.photos_slider').slick({
 });
 
 new WOW().init();
+
+// стрелочка вврех
+
+var toTop = '#toTop'
+
+$(function () {
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() >= 800) {
+
+            $(toTop).fadeIn();
+
+        } else {
+
+            $(toTop).fadeOut();
+
+        }
+
+    });
+
+    $(toTop).click(function () {
+
+        $('body,html').animate({ scrollTop: 0 }, 500);
+
+    });
+
+});

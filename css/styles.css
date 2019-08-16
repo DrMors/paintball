@@ -853,10 +853,22 @@ background: rgb(150, 47, 47);
 .toTop {
     position: fixed;
     left: 10px;
-    bottom: 65px;
+    bottom: 9px;
     border: 0;
     outline: 0;
     background: #80808054;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+    z-index: 2;
+}
+
+.toTop:active {
+    transform: translateY(-5px);
+}
+
+.toTop:hover {
+    background: #c7c5c554;
 }
 
 .toTop img {
